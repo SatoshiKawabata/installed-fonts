@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function fonts(fonts) {
+		// console.log('fonts', fonts);
+		var h1 = document.createElement('h1');
+		h1.innerHTML = "Installed fonts";
+		document.body.appendChild(h1);
+		for (var font of fonts) {
+			console.log(font.fontName);
+			var p = document.createElement('p');
+			p.innerHTML = font.fontName;
+			document.body.appendChild(p);
+		}
+	}
+</script>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="300" height="200" >
+    <param name="movie" value="./Fontlist.swf" />
+    <param name="quality" value="low" />
+    <param name="wmode" value="transparent" />
+    <embed src="./Fontlist.swf" class="swf-area" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" wmode="transparent"></embed>
+</object>
+</body>
+</html>

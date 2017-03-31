@@ -1,0 +1,22 @@
+{
+  "name": "installed-fonts",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-swf && npm run copy-html",
+    "build-swf": "mxmlc ./src/Fontlist.as && mv -f ./src/Fontlist.swf ./docs/",
+    "copy-html": "cp -f ./src/*.html ./docs/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SatoshiKawabata/installed-fonts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SatoshiKawabata/installed-fonts/issues"
+  },
+  "homepage": "https://github.com/SatoshiKawabata/installed-fonts#readme"
+}
